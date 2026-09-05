@@ -1,5 +1,5 @@
 def main():
-    message = "DevOps Mini Project 2 Running!"
+    message = "DevOps Mini Project 2 updated Running!"
     print(message)
     return message
 

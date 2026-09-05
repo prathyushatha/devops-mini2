@@ -8,4 +8,4 @@ from app import main
 
 def test_main():
     result = main()
-    assert result == "DevOps Mini Project 2 Running!"
+    assert result == "DevOps Mini Project 2 updated Running!"
