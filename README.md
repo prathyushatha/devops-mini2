@@ -1,53 +1,72 @@
 # DevOps Mini Project 2
 
-## How to Run
+## Project Overview
 
-### Prerequisites
-- Python 3.9+
+This project demonstrates a basic DevOps CI/CD workflow using Python,
+GitHub Actions, and Docker.
+
+Whenever new code is pushed to the GitHub repository, GitHub Actions
+automatically checks the application and runs automated tests.
+## 🛠️ Technologies Used
+
+- Python
 - Git
-- Docker (optional)
+- GitHub
+- GitHub Actions
+- Docker
+- Pytest
 
-### Clone
+## 📂 Project Structure
+
+text
+devops-mini2/
+│
+├── .github/
+│   └── workflows/
+│       └── main.yml
+│
+├── tests/
+│   └── test_app.py
+│
+├── app.py
+├── Dockerfile
+├── .dockerignore
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+Step 1: Clone the Repository
+
+Open Command Prompt or Terminal and run:
 
 git clone https://github.com/prathyushatha/devops-mini2.git
 
+Then enter the project folder:
+
 cd devops-mini2
 
-### Install Dependencies
+Step 2: Install Python Dependencies
 
+Run:
 pip install -r requirements.txt
+Step 3: Run the Application
 
-### Run Application
-
+Run:
 python app.py
 
-Expected Output:
+Expected output:
 
-DevOps Mini Project 2 Running!
+DevOps Mini Project 2 - Application Updated Successfully!
+🧪 Run Automated Tests
 
-### Run Tests
+The project uses Pytest for automated testing.
+
+Run:
 
 pytest
 
-Expected:
+Expected output:
 
 1 passed
 
-### Docker
-
-docker build -t devops-mini2 .
-
-docker run devops-mini2
-
-Expected:
-
-DevOps Mini Project 2 Running!
-
-## CI/CD
-
-GitHub Actions automatically:
-1. Checks out the code
-2. Sets up Python
-3. Installs dependencies
-4. Runs automated tests
-5. Builds the Docker image
+This verifies that the application is working correctly.
